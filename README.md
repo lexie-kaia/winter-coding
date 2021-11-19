@@ -15,4 +15,5 @@
 `ORDER BY` col `ASC`, col `DESC`  
 `LIMIT`  
 
-
+### JavaScript
+- [Basic JavaScript Syntax](https://spring-slipper-6a7.notion.site/Basic-JavaScript-Syntax-2337194a7b8c43b6adb901fd1e62f2dc)
