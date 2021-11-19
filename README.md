@@ -39,17 +39,17 @@ if (nx < 0 || nx > len - 1 || ny < 0 || ny > len - 1) continue;
 
 **IsPrime**
 ```js
-const isPrime = num => {
-  if (num === 1) return false;
-  if (num === 2 || num === 3) return true;
-  for (let i = 2; i < Math.sqrt(num); i++) {
-    if (num % i === 0) return false;
+  const isPrime = num => {
+    if (num === 0 || num === 1) return false;
+    if (num === 2 || num === 3) return true;
+    for (let i = 2; i < Math.sqrt(num); i++) {
+      if (num % i === 0) return false;
+    }
+    return true;
   }
-  return true;
-};
 ```
 
-**combination**
+**combination** -> 짝
 
 ```js
 const getCombinations = (arr, cnt) => {
@@ -73,7 +73,7 @@ const getCombinations = (arr, cnt) => {
 console.log(getCombinations([1, 2, 3, 4], 2));
 ```
 
-**permutation**
+**permutation** -> 나열
 
 ```js
 const getPermutations = (arr, cnt) => {
@@ -96,6 +96,24 @@ const getPermutations = (arr, cnt) => {
 
 console.log(getPermutations([1, 2, 3, 4], 2));
 ```
+
+**GCD/LCM**
+```
+function gcd(a,b){ 
+  let c = 0; 
+  while(b !== 0){ 
+    c = a % b; 
+    a = b; 
+    b = c; 
+  } 
+  return a; 
+}
+```
+```
+const lcm = a * b / gcd(a,b);
+```
+
+
 
 **DFS**
 ```
